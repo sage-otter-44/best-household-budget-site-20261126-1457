@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hearth Ledger — a household budget site for the Maple family: dashboard, transactions, budgets, savings goals, bills and reports, all offline.">
+<title>Hearth Ledger — Household Budget</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/dashboard"><span class="brand-mark" aria-hidden="true">⌂</span> Hearth Ledger</a>
+  <p class="brand-sub">The Maple household budget</p>
+  <button class="btn ghost small" data-action="reset-data" title="Restore the example household data">Reset example data</button>
+</header>
+<div class="layout">
+  <nav class="sidenav" id="sidenav" aria-label="Main navigation"></nav>
+  <main id="view" aria-live="polite"></main>
+</div>
+<nav class="bottomnav" id="bottomnav" aria-label="Main navigation"></nav>
+<footer class="foot">
+  <p>Hearth Ledger keeps your budget on your own device — data is saved in this browser only, never sent anywhere. Figures shown are the Maple household’s example data; edit anything to make it yours.</p>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
